@@ -10,15 +10,16 @@ import LogoSvg from '../../assets/logo.svg';
 export function Header() {
     return (
         <View style={styles.container}>
-            <LogoSvg />
+                <LogoSvg />
 
-            <UserPhoto imageUri='https://github.com/icocampos.png' />
-
-            <TouchableOpacity>
-                <Text style={styles.logoutText} >
-                    Sair
-                </Text>
-            </TouchableOpacity>
+                <View style={styles.logoutButton}>
+                    <TouchableOpacity>
+                        <Text style={styles.logoutText} >
+                            Sair
+                        </Text>
+                    </TouchableOpacity>
+                <UserPhoto imageUri='https://github.com/icocampos.png' />
+            </View>
         </View>
     );
 }
