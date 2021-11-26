@@ -5,6 +5,7 @@ import { Header } from '../../components/Header';
 import { MessageList } from '../../components/MessageList';
 import { styles } from './styles';
 import { SignInBox } from '../../components/SignInBox';
+import { SendMessageForm } from '../../components/SendMessageForm';
 
 
  export function Home() {
@@ -12,7 +13,7 @@ import { SignInBox } from '../../components/SignInBox';
         <View style={styles.container}>  
             <Header />
             <MessageList />
-            <SignInBox />
+            <SendMessageForm />
         </View>
     );
 }
